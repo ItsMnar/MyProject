@@ -1,0 +1,57 @@
+<app-header></app-header>
+
+<div class="container">
+    <div *ngFor="let item of data">
+        <div class="row mt-4 d-flex justify-content-center">
+            <div class="col-sm-10 col-12 col-lg-7">
+                <div class="card shadow-lg border-0 rounded-4 glass-effect"
+                     style="background: rgba(0, 20, 50, 0.85); transition: transform 0.3s ease-in-out; color: white;">
+                    <div class="card-body">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-sm-2 col-5 col-lg-2 text-center">
+                                <img src="{{ item.image }}" width="80" height="80" class="rounded shadow-sm img-hover">
+                            </div>
+                            <div class="col-sm-8 col-10 col-lg-8">
+                                <h5 class="text-white text-center fw-bold">{{ item.title }}</h5>
+                                <p class="text-light small">{{ item.description }}</p>
+                            </div>
+                            <div class="col-sm-2 col-12 text-center">
+                                <h6 class="fw-bold text-warning">{{ item.price }} SAR</h6>
+                                <a class="btn btn-primary text-white mt-2 px-3 py-1 rounded-3 fw-bold shadow-sm btn-hover"
+                                   [routerLink]="['/details',item.id]"> Add </a>
+                            </div>
+                        </div> 
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </div> 
+</div>
+
+<style>
+    .img-hover {
+        transition: transform 0.3s ease-in-out;
+    }
+    .img-hover:hover {
+        transform: scale(1.1);
+    }
+    .btn-hover {
+        transition: transform 0.3s ease-in-out, background-color 0.3s;
+    }
+    .btn-hover:hover {
+        background-color: #ffc107;
+        color: #000;
+        transform: scale(1.1);
+    }
+    .glass-effect {
+        backdrop-filter: blur(12px);
+        border-radius: 12px;
+        box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        transition: transform 0.3s ease-in-out;
+    }
+    .glass-effect:hover {
+        transform: scale(1.02);
+    }
+</style>
+

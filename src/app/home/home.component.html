@@ -1,0 +1,79 @@
+<app-header></app-header>
+
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+    <div class="card mt-3 shadow-lg p-4 rounded-4 border-0 glass-effect"
+         style="width: 900px; background: rgba(0, 20, 50, 0.9); font-family: 'Poppins', sans-serif; color: white;">
+        <div class="card-body text-center">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col mt-4">
+                    <div class="card border-0 bg-transparent">
+                        <div class="card-body">
+                            <div class="row border-bottom pb-4">
+                                <div class="col d-flex flex-column align-items-center">
+                                    <a routerLink="electronics" class="text-decoration-none text-white transition-hover">
+                                        <h4 class="fw-bold">{{ data[0] }}</h4>
+                                    </a>
+                                    <i class="fa fa-television icon-effect"></i>
+                                </div>
+                                <div class="col d-flex flex-column align-items-center">
+                                    <a routerLink="jewelery" class="text-decoration-none text-white transition-hover">
+                                        <h4 class="fw-bold">{{ data[1] }}</h4>
+                                    </a>
+                                    <i class="far fa-gem icon-effect"></i>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col d-flex flex-column align-items-center">
+                                    <a routerLink="men" class="text-decoration-none text-white transition-hover">
+                                        <h4 class="fw-bold">{{ data[2] }}</h4>
+                                    </a>
+                                    <i class="fa fa-male icon-effect"></i>
+                                </div>
+                                <div class="col d-flex flex-column align-items-center">
+                                    <a routerLink="women" class="text-decoration-none text-white transition-hover">
+                                        <h4 class="fw-bold">{{ data[3] }}</h4>
+                                    </a>
+                                    <i class="fa fa-female icon-effect"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .transition-hover {
+        transition: transform 0.3s ease-in-out, color 0.3s;
+    }
+
+    .transition-hover:hover {
+        transform: scale(1.1);
+        color: #f39c12;
+    }
+
+    .icon-effect {
+        font-size: 60px;
+        color: #f8f9fa;
+        transition: transform 0.3s ease-in-out, color 0.3s;
+    }
+
+    .icon-effect:hover {
+        transform: scale(1.2);
+        color: #ffc107;
+    }
+
+    .glass-effect {
+        backdrop-filter: blur(12px);
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    }
+</style>
+
+
+
+            
+    
+

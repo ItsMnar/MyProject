@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+img {
+    transition: transform 0.3s ease;
+}
+img:hover {
+    transform: scale(1.1);
+}
+.btn-primary {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+
