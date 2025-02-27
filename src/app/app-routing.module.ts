@@ -17,14 +17,9 @@ const routes: Routes = [
   {path:'men',component:MenComponent},
   {path:'home/men',component:MenComponent},
   {path:'women',component:WomenComponent},
+  { path: 'details/:id', component: DetailsComponent },
   {path:'home/women',component:WomenComponent},
-  /*{path:'details',component:DetailsComponent},
-  {path:'home/details',component:DetailsComponent},
-  {path:'electronics/details',component:DetailsComponent},
-  {path:'jewelery/details',component:DetailsComponent},
-  {path:'men/details',component:DetailsComponent},
-  {path:'women/details',component:DetailsComponent},*/
-  {path:'details/:id',component:DetailsComponent},
+
 ];
 
 @NgModule({
